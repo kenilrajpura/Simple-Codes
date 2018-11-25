@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+void main()
 {
   int n, reversedInteger = 0, remainder, originalInteger;
 
@@ -23,5 +23,4 @@ int main()
   else
       printf("%d is not a palindrome.", originalInteger);
 
-  return 0;
 }
