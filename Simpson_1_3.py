@@ -23,7 +23,10 @@ def Simpson_1_3(xi, xf, h):
     X = np.linspace(xi, xf, n+1)
     Y = y(X)
     
+    # Exclude 1st and last element, jump to 2nd data
     Y1 = np.sum( Y[1: len(Y) - 1 :2] )
+    
+    # Exclude 2nd and last element, jump to 2nd data
     Y2 = np.sum( Y[2: len(Y) - 1 :2] )
     
     S = (h/3)* ( Y[0] + Y[-1] + 4*Y1 + 2*Y2 )
